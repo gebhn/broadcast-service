@@ -1,0 +1,30 @@
+*
+
+!.gitignore
+
+!README
+!LICENSE
+
+!Makefile
+
+!go.mod
+!go.sum
+
+# Executables
+!cmd/
+
+!cmd/broadcast-service/
+!cmd/broadcast-service/**
+
+# Internal libraries
+!internal/
+
+# Shared libraries
+!pkg/
+
+# Docker images, CI/CD scripts
+!build/
+!build/package/
+
+!build/package/broadcast-service/
+!build/package/broadcast-service/**

@@ -1,0 +1,60 @@
+Broadcast Service
+________________________________________________________________________________
+
+Broadcast Service is the central hub which broadcasts messages to the recipients
+over a websocket connection. The purpose of isolating the message broadcast from
+the message faucet is to allow for a more scalable broadcast to many client
+connections from multiple instances.
+
+This service is just one of many pieces for a yet-to-be-named toy project of
+mine to create a from-scratch native chatting application.
+
+[000] Index
+________________________________________________________________________________
+
+* Dependencies ........................................................... [001]
+* Building ............................................................... [002]
+* Testing ................................................................ [003]
+* Contributing ........................................................... [004]
+* License ................................................................ [005]
+
+[001] Dependencies
+________________________________________________________________________________
+
+* Go       [https://go.dev/learn/]
+* Make     [https://www.gnu.org/software/make/]
+
+[002] Building
+________________________________________________________________________________
+
+Building the service is simple:
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ make build       # To build locally                                      |
+|   $ make build-image # To build a container                                  |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+[003] Testing
+________________________________________________________________________________
+
+Testing is similarly simple:
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ make test         # To run unit tests                                    |
+|   $ make count=n test # To run unit tests n times                            |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+[004] Contributing
+________________________________________________________________________________
+
+Pull requests should be opened for review with individual commits and follow the
+conventional commits guidelines.
+
+[005] License
+________________________________________________________________________________
+
+The project is free and open source, available under the GPL License.
